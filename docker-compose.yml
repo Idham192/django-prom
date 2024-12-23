@@ -14,7 +14,7 @@ services:
     networks:
       - mynetwork
     volumes:
-      - ./dbvolume:/var/lib/mysql
+      - C:\Users\user\Documents\Programming\DockerVolume\django-prom\mysql:/var/lib/mysql
 
   backend:
     build:
@@ -44,7 +44,7 @@ services:
     networks:
       - mynetwork  
     volumes:
-      - ./DevopsClassFront/dist:/usr/share/nginx/html
+      - C:\Users\user\Documents\Programming\repo\django-prom\DevopsClassFront\dist:/usr/share/nginx/html
 
 networks:
   mynetwork:
